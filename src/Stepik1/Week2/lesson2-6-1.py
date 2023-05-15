@@ -8,3 +8,24 @@
 # В примере мы считываем числа 1, -3, 5, -6, -10, 13; в этот момент замечаем,
 # что сумма этих чисел равна нулю и выводим сумму их квадратов,
 # не обращая внимания на то, что остались ещё не прочитанные значения.
+
+n = int(input())
+i = n
+s = i
+list_for_sum_of_squares = []
+list_for_squares = []
+sum_of_squares = 0
+
+while s != 0:
+    list_for_sum_of_squares += [i]
+    n = int(input())
+    i = n
+    s = s + i
+
+    if s == 0:
+        list_for_sum_of_squares += [i]
+        list_for_squares = [i ** 2 for i in list_for_sum_of_squares]
+        for j in list_for_squares:
+            sum_of_squares = sum_of_squares + j
+
+print(sum_of_squares)

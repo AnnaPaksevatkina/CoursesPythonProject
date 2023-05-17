@@ -18,8 +18,9 @@
 # Тогда все различные объекты являют собой множество {1, 2, 3}.
 # Таким образом, количество различных объектов равно трём.
 
-# objects = [1, 2, 1, 5, True, False, True, 'false', [], [1, 2], [1, 2]]
+# if __name__ == '__main__':
 
+# objects = [1, 2, 1, 5, True, False, True, 'false', [], [1, 2], [1, 2]]
 set_id = set()
 for obj in objects:
     set_id.add(id(obj))
